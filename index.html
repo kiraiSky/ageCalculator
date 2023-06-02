@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+  <title>Age calculator</title>
+</head>
+<body>
+
+  <div class="container">
+    <form class="rawDate-container">
+      <div class="inputContainer" >
+        <label for="day">Day</label>
+        <input type="text" id="day" name="day" placeholder="DD" maxlength="2" >
+        <span class="errorMsg">Must be a valid day</span>
+      </div>
+      <div class="inputContainer">
+        <label for="month" >Month</label>
+        <input type="text" id="month" name="month" placeholder="MM" maxlength="2" >
+        <span class="errorMsg">Must be a valid Month</span>
+      </div>
+      <div class="inputContainer">
+        <label for="year">Year</label>
+        <input type="text" id="year" name="year" placeholder="YYYY" maxlength="4">
+        <span class="errorMsg">Must be a valid Year</span>
+      </div>
+
+    <button type="submit"><img src="./img/icon-arrow.svg" alt=""></button>
+    </form>
+
+    <p class="displayAge"><span id="displayYear" class="color-purple">---</span> years</p>
+    <p class="displayAge"><span id="displayMonth" class="color-purple">---</span> months</p>
+    <p class="displayAge"><span id="displayDays" class="color-purple">---</span> days</p>
+  </div>
+  
+</body>
+</html>
